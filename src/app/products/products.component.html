@@ -1,0 +1,80 @@
+<p>products works!</p>
+<!--Main Navigation-->
+<div class="row">
+    <div class="col-md-4" >
+        <header>
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+              <div class="position-sticky">
+                <div class="list-group list-group-flush mx-3 mt-4">
+                        <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true" routerLink="/products" >                    <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Products</span>
+                        </a>
+                  <a
+                  routerLink="/add-product"
+                  class="list-group-item list-group-item-action py-2 ripple"
+                  aria-current="true"
+                >
+                  <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Add products</span>
+                </a>
+                <a
+                href="#"
+                class="list-group-item list-group-item-action py-2 ripple"
+                aria-current="true"
+              >
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Logout</span>
+              </a>
+                </div>
+              </div>
+            </nav>
+            <!-- Sidebar -->
+          
+            <!-- Navbar -->
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+              <!-- Container wrapper -->
+              <div class="container-fluid">
+                <!-- Toggle button -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#sidebarMenu"
+                  aria-controls="sidebarMenu"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="fas fa-bars"></i>
+                </button>
+          
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
+                    height="25"
+                    alt=""
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <!-- Container wrapper -->
+            </nav>
+            
+            <!-- Navbar -->
+          </header>
+    </div>
+    <div class="col-md-8" style="margin-top: 10px">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <h4>NEW COLLECTION</h4>
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!--Main layout-->
+  <main style="margin-top: 58px;">
+    <div class="container pt-4"></div>
+  </main>
+  <!--Main layout-->
